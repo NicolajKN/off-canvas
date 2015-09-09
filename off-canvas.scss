@@ -57,12 +57,11 @@ $off-canvas-direction-var: if( $off-canvas-direction == left, 1, -1 );
 	width: $off-canvas-mobile-width;
 	z-index: 10;
 
-	@if( $off-canvas-direction == left ) {
+	@if ( $off-canvas-direction == left ) {
 		left: 0;
 	} @else {
 		right: 0;
 	}
-
 
 }
 
@@ -89,6 +88,7 @@ $off-canvas-direction-var: if( $off-canvas-direction == left, 1, -1 );
 
 	// Move the wrapper to reveal the menu
 	.off-canvas__inner {
+		transform: translate( $off-canvas-mobile-width * $off-canvas-direction-var, 0 );
 		transform: translate3d( $off-canvas-mobile-width * $off-canvas-direction-var, 0, 0 );
 	}
 
@@ -121,6 +121,7 @@ $off-canvas-direction-var: if( $off-canvas-direction == left, 1, -1 );
 
 		// Move the wrapper to reveal the menu
 		.off-canvas__inner {
+			transform: translate( $off-canvas-width * $off-canvas-direction-var, 0 );
 			transform: translate3d( $off-canvas-width * $off-canvas-direction-var, 0, 0 );
 		}
 
