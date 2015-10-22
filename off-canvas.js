@@ -39,18 +39,18 @@
 
 		};
 
-		$( document ).on( 'click', '.has-off-canvas .off-canvas__inner', function( e ) {
+		$( document ).on( 'click touchstart', '.has-off-canvas .off-canvas__inner', function( e ) {
 
 			// Do not trigger on clicks on the menu
 			if ( !$( e.target ).closest( '.off-canvas__menu' ).length ) {
 
 				menu.close();
 
-  		}
+  			}
 
 		});
 
-		$( '.js-off-canvas-toggle' ).on( 'click', function( e ) {
+		$( '.js-off-canvas-toggle' ).on( 'click touchstart', function( e ) {
 			e.stopPropagation(); // Sorry world, I shouldn't be doing that.
 
 			var data = $( this ).data();
