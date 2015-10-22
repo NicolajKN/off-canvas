@@ -50,7 +50,7 @@
 
 		});
 
-		$( '.js-off-canvas-toggle' ).on( 'click touchstart', function( e ) {
+		$( '.js-off-canvas-toggle' ).on( 'click', function( e ) {
 			e.stopPropagation(); // Sorry world, I shouldn't be doing that.
 
 			var data = $( this ).data();
