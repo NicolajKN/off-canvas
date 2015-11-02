@@ -11,9 +11,11 @@
 
 				if ( this.isOpen ) {
 					this.close();
+
 				} else {
 					this.open();
 				}
+
 
 			},
 
@@ -39,14 +41,19 @@
 
 		};
 
-		$( document ).on( 'click touchstart', '.has-off-canvas .off-canvas__inner', function( e ) {
+		$( document ).on( 'click touchend', function( e ) {
+			e.stopImmediatePropagation();
 
-			// Do not trigger on clicks on the menu
-			if ( !$( e.target ).closest( '.off-canvas__menu' ).length ) {
+			if ( $( 'body' ).hasClass( 'has-off-canvas' ) ) {
 
-				menu.close();
+				// Do not trigger on clicks on the menu
+				if ( !$( e.target ).closest( '.off-canvas__menu' ).length ) {
 
-  			}
+					menu.close();
+
+	  			}
+
+			}
 
 		});
 
@@ -63,7 +70,7 @@
 
 			menu.toggle();
 
-		});
+		} );
 
 	});
 
