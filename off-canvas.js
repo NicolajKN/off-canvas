@@ -42,9 +42,10 @@
 		};
 
 		$( document ).on( 'click touchend', function( e ) {
-			e.stopImmediatePropagation();
+			
 
 			if ( $( 'body' ).hasClass( 'has-off-canvas' ) ) {
+				e.stopImmediatePropagation();
 
 				// Do not trigger on clicks on the menu
 				if ( !$( e.target ).closest( '.off-canvas__menu' ).length ) {
