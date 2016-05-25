@@ -48,7 +48,6 @@ $off-canvas-direction-var: if( $off-canvas-direction == left, 1, -1 );
 }
 
 .off-canvas__menu {
-	-webkit-overflow-scrolling: touch;
 	height: 100%;
 	overflow-y: scroll;
 	position: absolute;
@@ -87,7 +86,8 @@ $off-canvas-direction-var: if( $off-canvas-direction == left, 1, -1 );
 }
 
 .has-off-canvas {
-
+	-webkit-overflow-scrolling: touch;
+	
 	// Move the wrapper to reveal the menu
 	.off-canvas__inner {
 		transform: translate( $off-canvas-mobile-width * $off-canvas-direction-var, 0 );
