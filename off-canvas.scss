@@ -52,8 +52,10 @@ $off-canvas-direction-var: if( $off-canvas-direction == left, 1, -1 );
 	overflow-y: scroll;
 	position: absolute;
 	top: 0;
-	transform: translate( -100% * $off-canvas-direction-var, 0 );
-	transform: translate3d( -100% * $off-canvas-direction-var, 0, 0 );
+	-webkit-transform: translate( -100% * $off-canvas-direction-var, 0 );
+	        transform: translate( -100% * $off-canvas-direction-var, 0 );
+	-webkit-transform: translate3d( -100% * $off-canvas-direction-var, 0, 0 );
+	        transform: translate3d( -100% * $off-canvas-direction-var, 0, 0 );
 	width: $off-canvas-mobile-width;
 	z-index: 10;
 	bottom: 0;
@@ -90,8 +92,10 @@ $off-canvas-direction-var: if( $off-canvas-direction == left, 1, -1 );
 	
 	// Move the wrapper to reveal the menu
 	.off-canvas__inner {
-		transform: translate( $off-canvas-mobile-width * $off-canvas-direction-var, 0 );
-		transform: translate3d( $off-canvas-mobile-width * $off-canvas-direction-var, 0, 0 );
+		-webkit-transform: translate( $off-canvas-width * $off-canvas-direction-var, 0 );
+				transform: translate( $off-canvas-width * $off-canvas-direction-var, 0 );
+		-webkit-transform: translate3d( $off-canvas-width * $off-canvas-direction-var, 0, 0 );
+				transform: translate3d( $off-canvas-width * $off-canvas-direction-var, 0, 0 );
 	}
 
 	@if ( $off-canvas-prevent-scroll ) {
@@ -123,8 +127,10 @@ $off-canvas-direction-var: if( $off-canvas-direction == left, 1, -1 );
 
 		// Move the wrapper to reveal the menu
 		.off-canvas__inner {
-			transform: translate( $off-canvas-width * $off-canvas-direction-var, 0 );
-			transform: translate3d( $off-canvas-width * $off-canvas-direction-var, 0, 0 );
+ 			-webkit-transform: translate( $off-canvas-width * $off-canvas-direction-var, 0 );
+ 			        transform: translate( $off-canvas-width * $off-canvas-direction-var, 0 );
+			-webkit-transform: translate3d( $off-canvas-width * $off-canvas-direction-var, 0, 0 );
+			        transform: translate3d( $off-canvas-width * $off-canvas-direction-var, 0, 0 );
 		}
 
 	}
