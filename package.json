@@ -1,0 +1,19 @@
+{
+  "name": "off-canvas",
+  "version": "1.0.0",
+  "description": "Simple off-canvas navigation menus",
+  "main": "off-canvas.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolajKN/off-canvas.git"
+  },
+  "author": "Nicolaj Kirkegaard Nielsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NicolajKN/off-canvas/issues"
+  },
+  "homepage": "https://github.com/NicolajKN/off-canvas#readme"
+}

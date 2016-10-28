@@ -1,2 +1,2 @@
 # off-canvas
-My own off-canvas implementation
+Simple off-canvas navigation menus
